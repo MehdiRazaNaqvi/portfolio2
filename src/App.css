@@ -32,7 +32,7 @@ p {
 .base {
     width: 100%;
     height: min-content;
-    background-color: rgb(255, 230, 0);
+    background-color: rgb(16, 16, 16);
 
     display: flex;
     flex-direction: column;
@@ -45,13 +45,17 @@ p {
 
 
 
-
+h3 {
+    color: white;
+}
 
 
 .page {
     width: 100%;
     height: 100vh;
-    background-color: red;
+    /* background-color: red; */
+
+    /* background-color: rgb(16, 16, 16); */
 
     display: flex;
     align-items: center;
@@ -64,12 +68,20 @@ p {
 .span {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 25%;
-    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 35%;
+    /* background-color: yellow; */
+
     gap: 2%;
 }
 
+a {
+    display: flex;
+    align-items: center;
+    height: min-content;
+}
 
 .span1,
 .span2,
@@ -77,7 +89,7 @@ p {
 .span4,
 .span5 {
     width: 100%;
-    background-color: green;
+    /* background-color: green; */
     height: 100%;
 
     display: flex;
@@ -86,23 +98,38 @@ p {
 
 }
 
+.span5 {
+    /* background-color: rgb(129, 129, 129); */
+    background-color: rgb(255, 185, 54);
+
+    width: 80%;
+    height: 80%;
+    border-radius: 3rem;
+
+}
+
+
+
+
+
+
 
 .span4 {
     gap: 5%;
 }
 
 
-.span5{
- gap: 3%;   
+.span5 {
+    gap: 6%;
 }
 
 
 
 
 
-a{
-    width: 10%;
-    height: 100%;
+a {
+    width: 9%;
+    height: 80%;
     /* background-color: purple; */
 }
 
@@ -118,8 +145,8 @@ a{
     padding-right: 1%;
     width: 30%;
     height: 7%;
-    background-color: yellow;
-    /* background: rgba(0, 0, 0, 0.3); */
+    /* background-color: yellow; */
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 3rem;
 
     position: fixed;
@@ -139,18 +166,20 @@ a{
 
 
 
+.nav_a {
+    width: 10%;
+    height: 80%;
+}
+
+
 
 
 
 
 .nav_img {
 
-    width: 10%;
-    height: 80%;
-
-    color: white;
-
-
+    width: 100%;
+    height: 100%;
 
 
 }
@@ -158,16 +187,8 @@ a{
 
 
 .nav_img:active {
-    background-color: orange;
+    background-color: rgb(255, 255, 255);
     border-radius: 3rem;
-}
-
-
-
-
-
-.page2 {
-    background-color: pink;
 }
 
 
@@ -191,7 +212,7 @@ a{
 
     height: 100vh;
     width: 100%;
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -203,7 +224,7 @@ a{
 .heading {
     width: 100%;
     height: 10%;
-    background-color: yellow;
+    background-color: rgb(16, 16, 16);
 
     display: flex;
     align-items: center;
@@ -217,7 +238,6 @@ a{
     height: 90%;
 
     width: 100%;
-    background-color: green;
 
     display: flex;
     align-items: center;
@@ -238,14 +258,15 @@ a{
 
 
 .text {
+    width: 70%;
     background-color: grey;
 }
 
 
 
 .self_img {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     border-radius: 5rem;
 }
 
@@ -253,27 +274,78 @@ a{
 
 
 
+/* page3 */
 
 
+.page3 {
+    /* background-color: purple; */
+    height: 85vh;
+    width: 100%;
 
-
-
-
-
-
-
-/* page 3 */
-
-
-
-
-
-
-.cardu {
-    width: 80%;
-    height: 70%;
-    background-color: pink;
 }
+
+
+.frontend,
+.backend {
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    justify-content: flex-start;
+    padding: 5%;
+
+}
+
+
+
+
+
+.skill_list {
+    width: 70%;
+    height: 8%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.skill_img {
+    width: 10%;
+    height: 100%;
+}
+
+
+
+.skill_name {
+    width: 40%;
+    /* background-color: red; */
+    text-align: center;
+    color: white;
+    font-size: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+#message_me {
+    height: 75vh;
+}
+
+
+
+
 
 
 
@@ -287,7 +359,7 @@ a{
 .grid {
     width: 100%;
     height: 90%;
-    background-color: bisque;
+
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -326,11 +398,11 @@ a{
 
 }
 
-.card-text{
+.card-text {
     font-size: xx-small;
 }
 
-.card-title{
+.card-title {
     font-size: medium;
     font-weight: 400;
 }
@@ -383,29 +455,28 @@ a{
 
 
 
-.full_img{
+.full_img {
     width: 100%;
     height: 100%;
 }
 
 
-.message{
+.message {
     flex-direction: column;
     gap: 10%;
 }
 
 
-.form-control{
+.form-control {
     width: 80%;
 }
 
 
 
 
-.form-control{
+.form-control {
     font-size: small;
-    background-color: rgb(147, 147, 147);
-    color: white;
+    
 }
 
 
@@ -413,7 +484,7 @@ a{
 
 
 
-.btn{
+.btn {
     font-size: small;
 }
 
@@ -421,14 +492,15 @@ a{
 
 
 
-.social_img{
+.social_img {
     width: 100%;
     height: 100%;
 
 }
 
 
-h6{
+
+h6 {
     font-weight: 400;
 }
 
@@ -445,6 +517,65 @@ h6{
 
 
 
+/* styling */
+
+
+
+.text,
+.pic {
+    background-color: rgb(16, 16, 16);
+}
+
+.text {
+    padding-right: 5%;
+    padding-left: 5%;
+
+
+
+}
+
+
+.about_text {
+    font-size: large;
+    color: orange;
+
+    font-family: monospace;
+}
+
+
+
+
+
+.span3 {
+
+
+    color: rgb(215, 215, 215);
+}
+
+
+
+
+.white {
+    color: white;
+    font-size: xx-small;
+}
+
+.orange {
+    color: orange;
+    font-size: small;
+}
+
+
+
+
+.sites_link {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: 1;
+}
+
+
 
 
 
@@ -453,25 +584,44 @@ h6{
 @media screen and (max-width: 970px) {
 
 
-h3{
-    font-size: medium;
-}
 
-.span3{
-font-size: x-small;
-}
+    .span{
+        width: 60% ;
+        
+    }
 
-a{
-    width: 8%;
-    height: 80%;
-}
+ 
+
+    .span3 {
+        font-size: x-small;
+    }
 
 
-.btn{
-    font-size: 45%;
-    width: 30%;
-}
+    .span2 {
+        width: 90vw
+        
+    }
 
+
+    a {
+        width: 8%;
+        height: 80%;
+    }
+
+
+    .btn {
+        font-size: 45%;
+        width: 30%;
+    }
+
+
+    .skill_name {
+        font-size: small;
+    }
+
+    .self_img {
+        height: 30%;
+    }
 }
 
 
@@ -489,64 +639,115 @@ a{
 @media screen and (max-width: 600px) {
 
 
-    h3{
-        font-size: x-small;
-        font-weight: 400;
-    }
+ 
 
 
-    .partial{
+ 
+
+ 
+
+    .partial {
         flex-direction: column;
     }
-    .pic , .text{
-        background-color: red;
-        width: 75%;
-        height: 50%;
+
+    .pic,
+    .text {
+        width: 85%;
+        padding: 0;
 
     }
 
 
-    .grid{
-        grid-template-columns: repeat(2,1fr);
+    .about_text {
+        text-align: center;
+        font-size: medium;
     }
 
-    .card-text{
+
+    .grid {
+        row-gap: 0%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .card-text {
         display: none;
     }
 
-    .card{
+    .card {
         width: 90%;
         height: 90%;
     }
 
-    .card-title{
+    .card-title {
         font-size: xx-small;
     }
 
 
-    .last_pic{
+    .last_pic {
         display: none;
     }
 
 
-    a{
-        width: 10%;
-        height: 60%;
+    .social_img {
+        width: 100%;
+        height: 80%;
     }
 
-    .span3{
+
+
+
+    .span3 {
         font-size: 45%;
     }
 
-    .btn{
+    .btn {
         width: 50%;
     }
 
 
 
-    .navbar{
+    .navbar {
         width: 40%;
     }
+
+
+
+    .image {
+        height: 40%;
+    }
+
+
+    .self_img {
+        width: 40%;
+        height: 70%;
+    }
+
+
+    .skill_name {
+        font-size: 50%;
+    }
+
+
+    .frontend,
+    .backend {
+        width: 80%;
+    }
+
+    .form-control {
+        font-size: 40%;
+        color: white;
+    }
+
+
+    .orange {
+        font-size: 50%;
+    }
+
+    .white {
+        font-size: 40%;
+    }
+
 
 }
 
@@ -560,38 +761,102 @@ a{
 
 
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 440px) {
 
-    .span{
-        width: 50%;
+    .span {
+        width: 80%;
+        /* background-color: red; */
     }
 
-    h3{
+
+    .span2 {
+
+        /* background-color: yellow; */
+        width: 90vw;
+        font-size: 160%;
+    }
+
+    .span5 {
+        height: 45%;
+        padding-left: 2%;
+        padding-right: 2%;
+
+
+    }
+
+    .span4 {
+        width: 70%;
+        /* background-color: red; */
+    }
+
+
+
+    h3 {
+        font-size: 80%;
+    }
+
+    .span3 {
         font-size: 50%;
     }
 
-    .span3{
-        font-size: 40%;
-    }
 
-    a{
+    a {
         /* height: 40%; */
         width: 13%;
+
     }
 
-    .navbar{
+    .span5 {
+        gap: 5%;
+    }
+
+    .navbar {
         width: 60%;
     }
 
-    .btn{
-        font-size: 25%;
-    }
-
-    .grid{
-        grid-template-columns: repeat(1,1fr);
+    .btn {
+        font-size: 33%;
     }
 
 
 
+    .about_text {
+        font-size: x-small;
+    }
 
+
+
+    .skill_name {
+        font-size: 40%;
+    }
+
+    .skill_img {
+        width: 6%;
+        height: 75%;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+form {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+}
+
+.listone {
+    background-color: orange;
+    margin-bottom: 5%;
 }
