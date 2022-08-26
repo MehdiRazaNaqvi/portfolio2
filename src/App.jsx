@@ -1,5 +1,5 @@
-// import { Bar } from "react-chartjs-2";
-// import Chart from 'chart.js/auto';
+
+
 import Home from "./pics/home.svg"
 import Skill from "./pics/skills.svg"
 import Person from "./pics/person.svg"
@@ -8,6 +8,7 @@ import Project from "./pics/projects.svg"
 import Contact from "./pics/contact.svg"
 
 import Message from "./pics/message.svg"
+
 
 
 
@@ -42,6 +43,7 @@ const App = () => {
 
 
 
+
   const generatepdf = (e) => {
 
 
@@ -49,16 +51,16 @@ const App = () => {
 
 
 
-    
+
 
     Axios({
-      url : "https://chat-app-ser.herokuapp.com/download",
-      method : "GET",
-      responseType : "blob"
+      url: "https://chat-app-ser.herokuapp.com/download",
+      method: "GET",
+      responseType: "blob"
     })
 
 
-      .then(res => FileDownload(res.data , "resume.pdf"))
+      .then(res => FileDownload(res.data, "resume.pdf"))
     // .then(res => console.log(res))
 
 
@@ -73,40 +75,11 @@ const App = () => {
 
   return (
 
-    // <div className="main_div">
-
-
-
-    // <Bar
-    //   className="actual_bar"
-    //   data={{
-    //     labels: ["Monday", "Tuesday", "Wednesday", "Thursday"],
-    //     datasets: [{
-    //       label: "# of votes", data: [3, 7, 6, 3], backgroundColor: ["orange" , "yellow" , "pink" , "green"], barPercentage: 0.5,
-    //       barThickness: 40,
-    //     }]
-    //   }}
-
-
-
-    //   height='50vh'
-    //   width='50vw'
-    //   options={{ maintainAspectRatio: false , plugins:{legend: {labels: {font : 200}}}}}
-
-    // >
-
-    // </Bar>
-
-
-
-    // </div>
-
-
-
-
 
 
     <div className="base" >
+
+
 
 
 
@@ -159,7 +132,7 @@ const App = () => {
           <span className="span4">
 
             <button className="btn btn-outline-light" onClick={(e) => generatepdf(e)} >Download CV</button>
-            <button className="btn btn-light" >Lets Talk </button>
+            <button className="btn btn-light" onClick={() => { window.scrollTo(0, document.body.scrollHeight); }} >Lets Talk </button>
 
           </span>
 
@@ -226,6 +199,8 @@ const App = () => {
 
         <div className="heading" > <p className="white">Some of my practice</p> <p className="orange">Projects</p>  </div>
 
+
+
         <span className="grid" >
 
 
@@ -254,11 +229,11 @@ const App = () => {
 
 
 
-          <a rel="noopener" target="_blank" href="https://mehdirazanaqvi.github.io/expense-tracker/" className="card bg-light text-dark">
-            <img referrerPolicy="no-referrer" class="card-img" src="https://lh3.googleusercontent.com/vx5NvrTRRw8JKH7xWe3soa8vn_LsjmhORWRUKjvnsopYOBsBB_Cx2UDqTewMgNC03SSfEDwD71LmpR5nEA8bcgIodWsXSBfX4usq4ojAaFTKU-L7mkU3hDoM5VCnZroUfGI44XSsF-3CTWCouqFxlyspyDzG_WOCf2pn1hJYX7qNFIfBOyuh3HcYoVAOkEnbDBo72N0ZZx-5dIJRG72KJNkOgqYuQ8-ptLltX8YWE5fD0Dn869prNDlDDZpg9Yse_cBP_N_NIFKKjhwxDwF2yQGgIrYGHy0_nVxSd_fNKlRyxO91Zbs6-jWWG5RcDISsZy_06VG7YiMJ1zwO-ZSeXum3sxInVt16LKG_IhWQviNcKQeSbBvenJW9C_wf07q5jEhSSXnM_JxREy7T1LIOhOJcSoggCbR6zmxQnZ_eL6if6UABgggYX9MjKmvsnz7B10Xs5UyKY9i3zvMhsAUuoT-noANrCtPna44Fo-qNXs_6VaWlF7HD7WFwZSiwvKJk0Vf-lAKad5z5LjP5L7YiieS_mQeNfUw-orIufcqGzYKvxvoln1RmMN5zyeBTQctSdIWA3oORjb1OA3xBmq1qO8so7x_UXtcLAQnhpkFaIMjESyLzpVXdmM6GrqPOXXb8jo-x_5jzmebyPDaBu24DnVwtR2Hmw9tM-QVjDo86jAhuhtDraImzuo5E3-BORwL5ZBpl2AoavGNvb0eczI-xQlGfMSmIXOh5YDP1TV6eAkVKQfHMhvF2yQz-UaNO=w1366-h656-no?authuser=0" alt="Card image" />
+          <a rel="noopener" target="_blank" href="https://mehdirazanaqvi.github.io/chat-app/" className="card bg-light text-dark">
+            <img referrerPolicy="no-referrer" class="card-img" src="https://lh3.googleusercontent.com/LG0NGWhZS5BKwzZhaqzwCZM2qhQRjBM4_WrROlZvGHVqeaUayB8LnqoDhP92lSND9qOt-N8Me48EsVdFVAKgz4kckZk0pTY5oZiR017ZTE1SgyBli8e2_tRp_zO6l1tMyHAPzyco-VZZ_HJFQSSkvOD_0U9jH4wkP6AvFcMSFNbtQll2E1J76L07Gt42fYoeOSc1GTN5rg1h8RuhsXM3a8dXRyvh2aOkueXkFd6EI6Vk8vy0mZDGP8eCZjy6CXKbYh0nbPh2DK2AxbsIsuyEJ-Gik_eL_YxHiH3Uc1cUqsApyKzeSQmPcTPXUIDxYwFFs5ukiYeaAuT0siO8I6wOLlAcKgGguLQka4aLbmuSniVwcxLZbfzgnyP4qn8g8jg1iTbZXZXDODfb59ajYO4QXjGe0-BXjaO4_I3ZGbN2tA7SCUiWZflbkhg38ikkf0OHcH9QMBSO7SzxW1ColIKo3BpBEzLaklPzSvakPzGPqFwW66A7YzzMR2-_6VhInswJ9S-1KDgOg7vp-tuonz9lTJlUu-XlT2m8FBbpYGwjAnNN1iIITmsbyCDdWm7SClEb3vnf8NnAaYr--rf3-hWFGJqCrEH44XvvqNDLyFU3yJHeD44KWTRgzneqrqKO21n4KabR46gRKsRj3vvOqIfnio42dcnrK2UdQB4FzehmQImAjxgZw4gHt5_A8rcgLY8K73SekrSwVPspjcWjQ8HsYnpidE53UWQ6Bn5TzFVpQB__3eb6UXKQ6cmfo_mv=w1364-h657-no?authuser=0" alt="Card image" />
             <div class="card-img-overlay">
-              <h5 class="card-title">Expense Tracker App</h5>
-              <p class="card-text">Calculate and record expenses and gains</p>
+              <h5 class="card-title">Chat app</h5>
+              <p class="card-text">Chat app with socket.io</p>
             </div>
           </a>
 
@@ -277,7 +252,7 @@ const App = () => {
           <a rel="noopener" target="_blank" href="https://mehdirazanaqvi.github.io/delivery_app/" className="card bg-light text-dark">
             <img referrerPolicy="no-referrer" class="card-img" src="https://lh3.googleusercontent.com/WC0PvrRIXIMMHiA-PZo1P8p2fBuyAS3FzDXOg0S5hDEI0J80R1GCYa2xhFiH-JHpWyt-_aRtTY_HxpLHgWv8Zod_3lnibkr3SUrVvWFSCWAmGnezeZyJnMCS5lwlnGJEpcs3ZyIaoMA5YmL8nCAIoJSJP_mQr9g2WrgRqdRfvlP4GNIoFQHml7oP3SRReq3BU69MrSmzZs3TtpOmfApkokkJQhXsD_OSGQeLJOBtsOMO6Tu2qxn1YAyI2nVven4lsMkxEH2UOiFPFGAFPBCxkwj7kI9yFX3fbN5xyYemc37Ycnh5W_mFJpiqAMzCXZTxRwNdeKZHd-ulAYTlSIECD7CAa1mOQF9Gu-oAYoPsCqWbxjSIBBoSTEMigFfmkFEf8v_2HkxKyVvk1IsgJdAA-Hbe7TCm944XUX4PKehnTplotG_c5XNpc824I9mcZnNlTt0tVm61_sNrXa_KgHl-sgsY2mFVFBC9l-vxvq7dZ47mKGADI8-jQSTrCc4h7vFAZqRaFbuR7tw-9gfr0pn4vfFrt3aCExFRQ_Ckdh81FIxVyEw3Dg9qvDu9b72eTNNEjvMXJpwWEKowjxGlbqZb8A8tj9VlgB5XyaDtVGGQqs28SEHp5BToawfTFDLAsjChSXXQ6sDq6wtNjAMu6Rix7nD6-MYTSXAnJnmy10_4z_ZGLolcZTuW7iazi9z5EWStOgLzbkDALXCYeGHtFWIT1l3mJtFeAlgyc6cZO8NDFiUUM02ORP6glGloCLG_=w1366-h656-no?authuser=0" alt="Card image" />
             <div class="card-img-overlay">
-              <h5 class="card-title">Delivery App</h5>
+              <h5 class="card-title">Grocery App</h5>
               <p class="card-text">An app that conatins all brands and deliver their products</p>
             </div>
           </a>
@@ -312,6 +287,48 @@ const App = () => {
               <p class="card-text">A custom website made for a client</p>
             </div>
           </a>
+
+
+
+
+          <a rel="noopener" target="_blank" href="https://mehdirazanaqvi.github.io/quiz" className="card bg-light text-dark">
+            <img referrerPolicy="no-referrer" class="card-img" src="https://lh3.googleusercontent.com/AbrWNQ2hpYPfJDpS-WtBacYvdBQxo717PlAdPRhtLel-KfQm7_g3gv3oZZcGPkDff5fy1udHiPhGrsjY9AnYcgvlaHxf-5Sr3DyijPlOxTvCmbakcFO5AXQ_mp6LChhEY_LdieL1L3lEOJI1eOaCGZn5KSRUUs6Nh5fvkw1H4l8JqSriufmJg1LPM9CJO1G9P8W9mMrVG2kZsQH0doYaYt2TEiIYjqzOzNAShT-q1UwEvlTC7Yo26UU31f-d4j1qtqZeFhTiS5YHMzb67FgTDeD9TF_6zr4YO3Ziu7xR5I4o92366o_dn4OCqCddpmNlOA8RcjCwoSFmM5O5qnFoFu_AvnRuaxGISgS9-s7zgFUiOOaYW9vF9KYi8uiaBY-E1QuVMb-vUJzvcf_NvqqSoq33rmJhsQLY6xc6atVDNOVckM1LC-LuWvknIPH16YRGmCio-BQZTdi7FSiyuXSKTvNY901vW9oYCNELLFt-YKPhuc1gv-ne66pSvZqOsfDXcAtWkQVuirVHAjNpzAi8KOkCCT_TY1uTuR_iBRYhPTSY0DlEKz87NCQYKxLYxm2Ig4XevN1OOIhzIfjdKJJdpVH8w8svyemcOAgpB4k3-LsfResA3f71AYkhM65NhYeuC8AB0p0foJYe1ICx89GED8sZj3gOYcDdlHe7TE1WxKxuECA9yguGXcNvK1wjk-BAl5Bq5tss9V6ITDgfToKteOntIxFF98FDDWwopreyJRsXNBEGSPh4xmk3LVqP=w1366-h654-no?authuser=0" alt="Card image" />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Quiz app</h5>
+              <p class="card-text">Quiz app for teachers and organizations</p>
+            </div>
+          </a>
+
+
+
+
+
+
+          <a rel="noopener" target="_blank" href="https://mehdirazanaqvi.github.io/object-detector" className="card bg-light text-dark">
+            <img referrerPolicy="no-referrer" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Detected-with-YOLO--Schreibtisch-mit-Objekten.jpg" alt="Card image" />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Object detector</h5>
+              <p class="card-text">Detect and classifies objects through webcam</p>
+            </div>
+          </a>
+
+
+
+
+          <a rel="noopener" target="_blank" href="https://mehdirazanaqvi.github.io/voting-app" className="card bg-light text-dark">
+            <img referrerPolicy="no-referrer" class="card-img" src="https://lh3.googleusercontent.com/XxgREdC7mTQpo2cCYSY2ktWZLt2PuzoStTrnNidVpwnrS54BLBB-pUL1-8_0QxxgLXoIQflXWDK9eaRXHsCCBTnHbYY5dkd53F65ddzl0u7nFQW6QCwHu7U639dQlL-XXj7Fnof1zPZlTYK5xanSM7OH_qGtTFvRsUpoI8uhjBjBhAoVzDjKmn0YB9u3gjrFIA2g2Fpkd1PvMxp6XL1Kx2T8q1ORMbHmTiPipwrfRMA4b3YYIb92jgSoOf9ZvY4DZgX1H_CFl5p9ZAYoUNhqRk9j57RgjIsyWYVPoYrim-Zf0BcRucb35ipSp9xTKc5dZFdFV1tXXDcxjSSq7HFUq8oaOI6rbxBCOko-W8QAsaY8Oplb_NELJ6JG6D0ytzJI2CbWDzxR4oFGDvbliXJIu9Xhk6Ue6JiRVoS9jbpYdHTx5YGmF13MX21brL2FgZDaacpKEgCo3UVZkd8y1yVePXkd2yZPCO0StiR-xI0Gh90ArGVxsC66_z4ImDqkDi5Jo_RsHG7dXAyFBcqrKXanCa8j6BzgGnFbu7DUPM_V343ErLWlJn9t0JVXpHZXE7GeqiJvWf2evIwD5qGsxIyv2t4drL9yiHYbbnw2tQDqMVmQSu3-WgB-S2VMSnCtoJg46TyfaupcHXVTvUvEj1sptlqy-sZhQrVvGx6CCISgtxpNAqCTuFHyReCNAWhqk_PfYdSf4wea97zw9YoavNBAY6xvY7Lnxv1DYnek5lYYM9pixUBPKn4tz5Iklz19=w1366-h654-no?authuser=0" alt="Card image" />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Voting app</h5>
+              <p class="card-text">An online voting app</p>
+            </div>
+          </a>
+
+
+
+
+
+
+
 
         </span>
 
